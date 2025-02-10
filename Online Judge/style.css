@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.top-nav {
+    background-color: #252526;
+    height: 60px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #2196F3;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2196F3;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #666;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 60px); /* 减去导航栏高度 */
+    margin-top: 60px; /* 防止内容被导航栏覆盖 */
+}
+
+/* 题目描述区域 */
+.problem-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #2d2d2d;
+    overflow-y: auto;
+}
+
+.problem-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.difficulty {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.difficulty.easy {
+    background-color: #4CAF50;
+}
+
+.difficulty.medium {
+    background-color: #FF9800;
+}
+
+.difficulty.hard {
+    background-color: #F44336;
+}
+
+.problem-content {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.sample-box {
+    background-color: #333;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* 代码编辑区域 */
+.coding-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+}
+
+.editor-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #252526;
+}
+
+.language-select {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.editor-container {
+    flex: 1;
+    position: relative;
+}
+
+.code-editor {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    border: none;
+    resize: none;
+    font-family: 'Consolas', monospace;
+    tab-size: 4;
+}
+
+/* 运行结果区域 */
+.result-panel {
+    height: 30%;
+    background-color: #252526;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.test-case {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #333;
+    border-radius: 3px;
+}
+
+.test-case.passed {
+    border-left: 4px solid #4CAF50;
+}
+
+.test-case.failed {
+    border-left: 4px solid #F44336;
+}
+
+.button-group {
+    padding: 10px;
+    background-color: #252526;
+    text-align: right;
+}
+
+.btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-run {
+    background-color: #2196F3;
+    color: white;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+pre {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 10px 0;
+}
