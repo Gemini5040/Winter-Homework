@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Judge</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <h1 class="logo">Online Judge</h1>
+        <div class="nav-links">
+            <a href="#problemset">题单</a>
+            <a href="#settings">设置</a>
+            <a href="#profile">个人中心</a>
+            <div class="user-info">
+                <img src="avatar-placeholder.png" alt="用户头像" class="avatar">
+                <span>用户123</span>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <!-- 左侧题目描述 -->
+        <div class="problem-panel">
+            <h1 class="problem-title">A + B 问题</h1>
+            <span class="difficulty easy">简单</span>
+            
+            <div class="problem-content">
+                <h3>题目描述</h3>
+                <p>给定两个整数 A 和 B，请输出它们的和。</p>
+                
+                <h3>输入格式</h3>
+                <p>输入包含两个整数 A 和 B，用空格分隔。</p>
+                
+                <h3>输出格式</h3>
+                <p>输出一个整数表示答案。</p>
+                
+                <h3>示例输入</h3>
+                <div class="sample-box">
+                    <pre>1 2</pre>
+                </div>
+                
+                <h3>示例输出</h3>
+                <div class="sample-box">
+                    <pre>3</pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右侧编辑和结果区域 -->
+        <div class="coding-panel">
+            <!-- 代码编辑器 -->
+            <div class="editor-header">
+                <span>代码编辑器</span>
+                <select class="language-select">
+                    <option>C</option>
+                    <option>C++</option>
+                    <option>Python</option>
+                    <option>Java</option>
+                </select>
+            </div>
+            <div class="editor-container">
+                <textarea class="code-editor" placeholder="在这里编写你的代码...">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+    cout << a + b;
+    return 0;
+}</textarea>
+            </div>
+
+            <!-- 按钮组 -->
+            <div class="button-group">
+                <button class="btn btn-run">调试代码</button>
+                <button class="btn btn-submit">提交答案</button>
+            </div>
+
+            <!-- 运行结果 -->
+            <div class="result-panel">
+                <h4>运行结果</h4>
+                <div class="test-case passed">
+                    <p>测试用例 1：通过 ✓</p>
+                    <p>执行时间：15ms</p>
+                </div>
+                <div class="test-case failed">
+                    <p>测试用例 2：失败 ×</p>
+                    <p>预期输出：42  你的输出：36</p>
+                </div>
+                <div class="test-case">
+                    <p>编译信息：g++ -std=c++11 main.cpp</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="script.js"></script>
