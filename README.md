@@ -1,3 +1,24 @@
-# Winter-Homework:OJ
+# oj-sys
 
-2025.02.10 用在deepseek的帮助下用html+css+javascript写了一个静态页面
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
